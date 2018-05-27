@@ -1,70 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--日志级别以及优先级排序: OFF > FATAL > ERROR > WARN > INFO > DEBUG > TRACE > ALL -->
-<!--Configuration后面的status，这个用于设置log4j2自身内部的信息输出，可以不设置，当设置成trace时，你会看到log4j2内部各种详细输出-->
-<!--monitorInterval：Log4j能够自动检测修改配置 文件和重新配置本身，设置间隔秒数-->
-<configuration status="DEBUG"> 
-  <!--先定义所有的appender-->  
-  <appenders> 
-    <!--这个输出控制台的配置-->  
-    <console name="Console" target="SYSTEM_OUT"> 
-      <!--输出日志的格式-->  
-      <PatternLayout pattern="[%d{HH:mm:ss,SSS}] [%p] %l - %m%n"/> 
-      <!-- 级别限制 只显示debug级别之上的 -->
-      <ThresholdFilter level="DEBUG" onMatch="ACCEPT" onMismatch="DENY"/>  
-    </console>  
-    <!-- 这个会打印出所有的info及以下级别的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档-->  
-    <RollingFile name="RollingFileInfo" fileName="${sys:user.home}/logs/info.log" filePattern="${sys:user.home}/logs/$${date:yyyy-MM}/info-%d{yyyy-MM-dd}-%i.log"> 
-      <!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch）-->  
-      <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>  
-      <PatternLayout pattern="[%d{HH:mm:ss,SSS}] [%p] %l - %m%n"/>  
-      <Policies> 
-        <TimeBasedTriggeringPolicy/>  
-        <SizeBasedTriggeringPolicy size="100 MB"/> 
-      </Policies> 
-    </RollingFile>  
-    <RollingFile name="RollingFileWarn" fileName="${sys:user.home}/logs/warn.log" filePattern="${sys:user.home}/logs/$${date:yyyy-MM}/warn-%d{yyyy-MM-dd}-%i.log"> 
-      <ThresholdFilter level="WARN" onMatch="ACCEPT" onMismatch="DENY"/>  
-      <PatternLayout pattern="[%d{HH:mm:ss,SSS}] [%p] %l - %m%n"/>  
-      <Policies> 
-        <TimeBasedTriggeringPolicy/>  
-        <SizeBasedTriggeringPolicy size="100 MB"/> 
-      </Policies>  
-      <!-- DefaultRolloverStrategy属性如不设置，则默认为最多同一文件夹下7个文件，这里设置了20 -->  
-      <DefaultRolloverStrategy max="20"/> 
-    </RollingFile>  
-    <RollingFile name="RollingFileError" fileName="${sys:user.home}/logs/error.log" filePattern="${sys:user.home}/logs/$${date:yyyy-MM}/error-%d{yyyy-MM-dd}-%i.log"> 
-      <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>  
-      <PatternLayout pattern="[%d{HH:mm:ss,SSS}] [%p] %l - %m%n"/>  
-      <Policies> 
-        <TimeBasedTriggeringPolicy/>  
-        <SizeBasedTriggeringPolicy size="100 MB"/> 
-      </Policies> 
-    </RollingFile> 
-  </appenders>  
-  <!--然后定义logger，只有定义了logger并引入的appender，appender才会生效-->  
-  <loggers> 
-    <!--通过级别，过滤掉spring和mybatis的一些无用的DEBUG信息-->  
-    <logger name="org.springframework" level="INFO"/>  
-    <logger name="org.mybatis" level="INFO"/>  
-    <root level="all"> 
-      <appender-ref ref="Console"/>  
-      <appender-ref ref="RollingFileInfo"/>  
-      <appender-ref ref="RollingFileWarn"/>  
-      <appender-ref ref="RollingFileError"/> 
-    </root> 
-  </loggers> 
+<!--Configuration后面的status，这个用于设置log4j2自身内部的信息输出，可以不设置，当设置成trace时，你会看到log4j2内部各种详细输出 -->
+<!--monitorInterval：Log4j能够自动检测修改配置 文件和重新配置本身，设置间隔秒数 -->
+<configuration status="DEBUG">
+	<!--先定义所有的appender -->
+	<appenders>
+
+		<!--这个输出控制台的配置 -->
+		<console name="Console" target="SYSTEM_OUT">
+			<!--输出日志的格式 -->
+			<PatternLayout
+				pattern="[%d{HH:mm:ss,SSS}] [%p] %l:\n%m%n" />
+			<!-- 级别限制 只显示debug级别之上的 -->
+			<ThresholdFilter level="DEBUG" onMatch="ACCEPT"
+				onMismatch="DENY" />
+		</console>
+
+
+
+
+		<!-- 这个会打印出所有的info及以下级别的信息，每次大小超过size，则这size大小的日志会自动存入按年份-月份建立的文件夹下面并进行压缩，作为存档 -->
+		<RollingFile name="RollingFileInfo"
+			fileName="${sys:user.home}/logs/dreamcube/info.log"
+			filePattern="${sys:user.home}/logs/dreamcube/$${date:yyyy-MM}/info-%d{yyyy-MM-dd}-%i.log">
+			<!--控制台只输出level及以上级别的信息（onMatch），其他的直接拒绝（onMismatch） -->
+			<ThresholdFilter level="INFO" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout
+				pattern="[%d{HH:mm:ss,SSS}] [%p] %l:\n%m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="100 MB" />
+			</Policies>
+		</RollingFile>
+
+
+		<RollingFile name="RollingFileWarn"
+			fileName="${sys:user.home}/logs/dreamcube/warn.log"
+			filePattern="${sys:user.home}/logs/dreamcube/$${date:yyyy-MM}/warn-%d{yyyy-MM-dd}-%i.log">
+			<ThresholdFilter level="WARN" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout
+				pattern="[%d{HH:mm:ss,SSS}] [%p] %l:\n%m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="100 MB" />
+			</Policies>
+			<!-- DefaultRolloverStrategy属性如不设置，则默认为最多同一文件夹下7个文件，这里设置了20 -->
+			<DefaultRolloverStrategy max="20" />
+		</RollingFile>
+
+		<!-- error 日志文件-->
+		<RollingFile name="RollingFileError"
+			fileName="${sys:user.home}/logs/dreamcube/error.log"
+			filePattern="${sys:user.home}/logs/dreamcube/$${date:yyyy-MM}/error-%d{yyyy-MM-dd}-%i.log">
+			<ThresholdFilter level="ERROR" onMatch="ACCEPT"
+				onMismatch="DENY" />
+			<PatternLayout
+				pattern="[%d{HH:mm:ss,SSS}] [%p] %l:\n%m%n" />
+			<Policies>
+				<TimeBasedTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="100 MB" />
+			</Policies>
+		</RollingFile>
+	</appenders>
+
+
+
+	<!--然后定义logger，只有定义了logger并引入的appender，appender才会生效 -->
+	<loggers>
+		<!--通过级别，过滤掉spring和mybatis的一些无用的DEBUG信息 -->
+		<logger name="org.springframework" level="INFO" />
+		<logger name="org.mybatis" level="INFO" />
+		<root level="all">
+			<appender-ref ref="Console" />
+			<appender-ref ref="RollingFileInfo" />
+			<appender-ref ref="RollingFileWarn" />
+			<appender-ref ref="RollingFileError" />
+		</root>
+	</loggers>
+
+
 </configuration>
-<!-- 
-为什么文件叫log4j-test.xml
-    Log4j will inspect the "log4j.configurationFile" system property and, if set, will attempt to load the configuration using the ConfigurationFactory that matches the file extension.
-    If no system property is set the properties ConfigurationFactory will look for log4j2-test.properties in the classpath.
-    If no such file is found the YAML ConfigurationFactory will look for log4j2-test.yaml or log4j2-test.yml in the classpath.
-    If no such file is found the JSON ConfigurationFactory will look for log4j2-test.json or log4j2-test.jsn in the classpath.
-    If no such file is found the XML ConfigurationFactory will look for log4j2-test.xml in the classpath.
-    If a test file cannot be located the properties ConfigurationFactory will look for log4j2.properties on the classpath.
-    If a properties file cannot be located the YAML ConfigurationFactory will look for log4j2.yaml or log4j2.yml on the classpath.
-    If a YAML file cannot be located the JSON ConfigurationFactory will look for log4j2.json or log4j2.jsn on the classpath.
-    If a JSON file cannot be located the XML ConfigurationFactory will try to locate log4j2.xml on the classpath.
-    If no configuration file could be located the DefaultConfiguration will be used. This will cause logging output to go to the console.
- -->
+<!-- 为什么文件叫log4j-test.xml Log4j will inspect the "log4j.configurationFile" 
+	system property and, if set, will attempt to load the configuration using 
+	the ConfigurationFactory that matches the file extensi文件on. If no system property 
+	is set the properties ConfigurationFactory will look f文件or log4j2-test.properties 
+	in the classpath. If no such file is found the YAML ConfigurationFactory 
+	will look for log4j2-test.yaml or log4j2-test.yml in the classpath. If no 
+	such file is found the JSON ConfigurationFactory will look for log4j2-test.json 
+	or log4j2-test.jsn in the classpath. If no such file is found the XML ConfigurationFactory 
+	will look for log4j2-test.xml in the classpath. If a test file cannot be 
+	located the properties ConfigurationFactory will look for log4j2.properties 
+	on the classpath. If a properties file cannot be located the YAML ConfigurationFactory 
+	will look for log4j2.yaml or log4j2.yml on the classpath. If a YAML file 
+	cannot be located the JSON ConfigurationFactory will look for log4j2.json 
+	or log4j2.jsn on the classpath. If a JSON file cannot be located the XML 
+	ConfigurationFactory will try to locate log4j2.xml on the classpath. If no 
+	configuration file could be located the DefaultConfiguration will be used. 
+	This will cause logging output to go to the console. -->
