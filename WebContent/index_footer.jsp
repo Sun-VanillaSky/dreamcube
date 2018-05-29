@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    
+
 <link rel="stylesheet" href="${pageContext.request.contextPath }/index_footer.css">
 
 <footer class="footer ">
@@ -18,27 +18,28 @@
 						<h4>关于</h4>
 						<ul class="list-unstyled">
 							<li>
-								<a href="/about/">关于我们</a>
+								<a href="/about/">关于我们：梦想立方</a>
 							</li>
 							<li>
-								<a href="/ad/">广告合作</a>
+								<a href="/ad/">加盟合作：中国校长智库网</a>
 							</li>
 							<li>
-								<a href="/links/">友情链接</a>
+								<a href="/links/">地址：济南市历下区山大路47号数码港大厦c座405室</a>
 							</li>
-							<li>
-								<a href="/hr/">招聘</a>
-							</li>
+
 						</ul>
 					</div>
 					<div class="col-sm-6  col-md-4">
 						<h4>联系方式</h4>
 						<ul class="list-unstyled">
 							<li>
-								<a href="http://weibo.com/bootcss" title="Bootstrap中文网官方微博" target="_blank">新浪微博</a>
+								<a href="#" title="电话：0531-8878-0018" target="_blank">新浪微博</a>
 							</li>
 							<li>
-								<a href="mailto:admin@bootcss.com">电子邮件</a>
+								<a href="mailto:hr@drmcube.com">联系我们：hr@drmcube.com</a>
+							</li>
+							<li>
+								<a href="mailto:contact@drmcube.com">联系我们：contact@drmcube.com</a>
 							</li>
 						</ul>
 					</div>
@@ -48,12 +49,13 @@
 			</div>
 		</div>
 		<hr>
+		<!-- 备案信息 -->
 		<div class="row footer-bottom">
 			<ul class="list-inline text-center">
 				<li>
-					<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备11008151号</a>
+					<a href="http://www.miibeian.gov.cn/" target="_blank">京ICP备XXXXXXXXXX号</a>
 				</li>
-				<li>京公网安备11010802014853</li>
+				<li>京公网安备XXXXXXXXXXXXXXXXXXX</li>
 			</ul>
 		</div>
 	</div>

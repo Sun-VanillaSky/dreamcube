@@ -16,7 +16,8 @@
 
 
 
-
+		<!-- 默认样式-->
+		<link rel="stylesheet" href="${pageContext.request.contextPath }/index.css">
 		<script type="text/javascript">
 
 
@@ -27,12 +28,19 @@
 
 	<body>
 
-		<p>呃呃呃</p>
-
 		<!-- header -->
 		<%@include file="/index_header.jsp"  %>
+		
+		
 		<!-- section -->
 		<%@include file="/index_section.jsp"  %>		
+		
+		<!-- 正文 开始 -->
+		峨峨峨
+		取向香甜个
+		<!-- 正文 结束 -->
+		
+		
 		<!-- footer -->
 		<%@include file="/index_footer.jsp"  %>
 	</body>

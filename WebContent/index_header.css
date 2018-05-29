@@ -1,0 +1,57 @@
+
+/*重新定义 bootstrap 样式*/
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 0px solid #eee; 
+}
+
+/*重新定义 bootstrap 样式*/
+.navbar {
+    margin-bottom: 0px;
+}
+/*重新定义 bootstrap 样式*/
+.navbar-toggle {
+    /* 去掉小平更多按钮上的边框 */
+    border: 0px solid transparent;
+}
+
+/* 重置导航兰字体颜色*/
+.navbar-inverse .navbar-brand{
+    color: #ffffff;
+}
+
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #f7f7f7;
+}
+
+
+
+/*重新定义 bootstrap 样式*/
+.navbar-inverse {
+    /* 导航栏颜色 */
+    background-color: rgb(43, 55, 221);
+    border-color: rgb(43, 55, 221);
+}
+.navbar-inverse .navbar-collapse {
+    border-color: rgb(255, 255, 255);
+}
+
+
+.navbar-inverse .navbar-toggle:focus{
+	/*去掉更多按钮点击之前颜色*/
+    background-color: unset;
+}
+.navbar-inverse .navbar-toggle:hover {
+	/*去掉更多按钮点击之后颜色*/
+    background-color: unset;
+}
+
+
+@media (min-width: 768px){
+    .navbar-right {
+        width: 40%;
+        margin-top: 10px;
+    }
+}

@@ -1,7 +1,17 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
-	<header class="navbar navbar-inverse navbar-fixed-top">
+	<link rel="stylesheet" href="${pageContext.request.contextPath }/index_header.css">
+
+	<!-- 顶上的横幅-->
+
+	<div class="page-header">
+		<h1>梦想立方
+			<small>用一场行走，开启孩子们路上的“梦想立方”</small>
+		</h1>
+	</div>
+
+	<header class="navbar navbar-inverse">
 		<div class="container">
 			<div class="navbar-header">
 				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".navbar-collapse">
@@ -10,30 +20,39 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand hidden-sm" href="http://www.bootcss.com" ></a>
+				<!-- 小屏上最左边的连接 跳到主页-->
+				<a class="navbar-brand " href="${pageContext.request.contextPath }/">梦想立方</a>
 			</div>
 			<div class="navbar-collapse collapse" role="navigation">
 				<ul class="nav navbar-nav">
-					<li class="hidden-sm hidden-md">
-						<a href="#" target="_blank" >首页</a>
+					<!-- <li class="hidden-sm hidden-md">
+					<a href="${pageContext.request.contextPath }/" target=“”>首页</a>
+				</li> -->
+					<li>
+						<a href="${pageContext.request.contextPath }/" target=“”>关于我们</a>
 					</li>
 					<li>
-						<a href="#" target="_blank" >关于我们</a>
+						<a href="${pageContext.request.contextPath }/" target=“”>研学产品</a>
 					</li>
 					<li>
-						<a href="#" target="_blank" >研学产品</a>
+						<a href="${pageContext.request.contextPath }/" target=“”>最新动态</a>
 					</li>
 					<li>
-						<a href="#" target="_blank" >最新动态</a>
-					</li>
-					<li>
-						<a href="#" target="_blank" >联系我们</a>
+						<a href="${pageContext.request.contextPath }/" target=“”>联系我们</a>
 					</li>
 
 				</ul>
-				<ul class="nav navbar-nav navbar-right hidden-sm">
-					<li>
-						<a href="/about/" >这是个啥</a>
+				<ul class="nav navbar-nav navbar-right">
+					<li >
+						<!-- 我觉得可以在这加一个搜索 -->
+						<div class="input-group">
+				
+							<input type="text" class="form-control" placeholder="搜索..">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Go!</button>
+							</span>
+						</div>
+						<!-- /.input-group -->
 					</li>
 				</ul>
 			</div>

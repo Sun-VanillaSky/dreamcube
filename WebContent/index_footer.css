@@ -9,26 +9,3 @@
 .footer {
 	background-color:#222;
 }
-
-
-
-@media ( min-width : 1200px) {
-
-	.footer .container {
-		width: auto;
-	}
-}
-
-@media ( min-width : 992px) {
-
-	.footer .container {
-		width: auto;
-	}
-}
-
-@media ( min-width : 768px) {
-
-	.footer .container {
-		width: auto;
-	}
-}
