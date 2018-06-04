@@ -29,7 +29,7 @@
 					<a href="${pageContext.request.contextPath }/" target=“”>首页</a>
 				</li> -->
 					<li>
-						<a href="${pageContext.request.contextPath }/" target=“”>关于我们</a>
+						<a id="tab_about" href="${pageContext.request.contextPath }/about.jsp" target=“”>关于我们</a>
 					</li>
 					<li>
 						<a href="${pageContext.request.contextPath }/" target=“”>研学产品</a>

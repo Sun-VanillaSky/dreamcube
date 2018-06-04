@@ -25,7 +25,11 @@
 .navbar-inverse .navbar-nav>li>a {
     color: #f7f7f7;
 }
-
+/*鼠标划过tab的样式*/
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color:#2898a1;
+}
 
 
 /*重新定义 bootstrap 样式*/
@@ -55,3 +59,4 @@
         margin-top: 10px;
     }
 }
+

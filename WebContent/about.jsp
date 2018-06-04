@@ -5,7 +5,7 @@
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<title>首页</title>
+		<title>关于我们</title>
 
 		<!-- 默认样式-->
 		<link rel="stylesheet" href="${pageContext.request.contextPath }/commons/css/default.css">
@@ -29,30 +29,73 @@
 	<body>
 
 		<!-- header -->
-		<%@include file="/index_header.jsp"  %>
+		<%@ include file="/index_header.jsp"  %>
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-sm-12 col-md-4 col-lg-4">
+					<div>关于我们</div>
+					<div>公司资质</div>
+					<div>公司简介</div>
+				</div>
+			
+				<div class="col-sm-12 col-md-8 col-lg-8" style="background-color:red" >
+					公司简介《ssss》<br>
+				</div>
+			</div>
+		
+		</div>
+			<!-- <div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-md-4 col-lg-4">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="col-sm-12 col-md-6  col-lg-6 col-lg-offset-1">
+						<div class="row about">
+							<div class="col-sm-6 col-md-4">
+
+							</div>
+							<div class="col-sm-6  col-md-4">
+
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div> -->
 
 
-			<!-- section -->
-			<%@include file="/index_section.jsp"  %>
-
-				<!-- 正文 开始 -->
-				峨峨峨 取向香甜个
-				<!-- 正文 结束 -->
 
 
-				<!-- footer -->
-				<%@include file="/index_footer.jsp"  %>
+
+
+
+
+
+
+
+
+
+
+			<!-- footer -->
+			<%@ include file="/index_footer.jsp"  %>
 	</body>
 
 	<script>
+
 
 		jQuery(document).ready(function () {
 
 
 			// 改变当前tab颜色
-			jQuery("#tab_index").css("background-color", "#2898a1");
+			jQuery("#tab_about").css("background-color", "#2898a1");
 
 		});
+
+
 	</script>
 
 	</html>
