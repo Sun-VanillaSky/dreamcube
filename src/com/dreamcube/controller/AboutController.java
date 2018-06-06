@@ -12,18 +12,67 @@ import com.dreamcube.commons.util.http.HttpUtils;
 
 
 
-@WebServlet("/index" )  
-public class IndexController  extends HttpServlet {
+@WebServlet("/about" )  
+public class AboutController  extends HttpServlet {
 
-	private static final long serialVersionUID = 7330800718341016554L;
+	private static final long serialVersionUID = 7055328045764070496L;
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		// 基础设置
 		HttpUtils.defaultServletSetting(req, resp);
 		
-		 req.getRequestDispatcher("/index.jsp").forward(req,resp);
+		
+		
+		
+		
+		
+		
+		
+		
+		 req.getRequestDispatcher("/about.jsp").forward(req,resp);
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@Override
+	protected void doPost (HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		doGet( req,  resp);
+	}
+
 	
 	
 	

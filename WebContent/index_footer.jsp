@@ -19,13 +19,13 @@
 						<h4>关于</h4>
 						<ul class="list-unstyled">
 							<li>
-								<a href="/about/">关于我们：梦想立方</a>
+								<a href="${pageContext.request.contextPath }/about/">关于我们：梦想立方</a>
 							</li>
 							<li>
-								<a href="/ad/">加盟合作：中国校长智库网</a>
+								<a href="${pageContext.request.contextPath }/ad/">加盟合作：中国校长智库网</a>
 							</li>
 							<li>
-								<a href="/links/">地址：济南市历下区山大路47号数码港大厦c座405室</a>
+								<a href="${pageContext.request.contextPath }/links/">地址：济南市历下区山大路47号数码港大厦c座405室</a>
 							</li>
 
 						</ul>

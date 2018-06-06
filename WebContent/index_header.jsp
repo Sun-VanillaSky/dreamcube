@@ -25,20 +25,18 @@
 			</div>
 			<div class="navbar-collapse collapse" role="navigation">
 				<ul class="nav navbar-nav">
-					<!-- <li class="hidden-sm hidden-md">
-					<a href="${pageContext.request.contextPath }/" target=“”>首页</a>
-				</li> -->
+
 					<li>
-						<a id="tab_about" href="${pageContext.request.contextPath }/about.jsp" target=“”>关于我们</a>
+						<a id="tab_about" href="${pageContext.request.contextPath }/about" target=“”>关于我们</a>
 					</li>
 					<li>
-						<a href="${pageContext.request.contextPath }/" target=“”>研学产品</a>
+						<a href="${pageContext.request.contextPath }/product" target=“”>研学产品</a>
 					</li>
 					<li>
-						<a href="${pageContext.request.contextPath }/" target=“”>最新动态</a>
+						<a href="${pageContext.request.contextPath }/news" target=“”>最新动态</a>
 					</li>
 					<li>
-						<a href="${pageContext.request.contextPath }/" target=“”>联系我们</a>
+						<a id="tab_contact" href="${pageContext.request.contextPath }/contact" target=“”>联系我们</a>
 					</li>
 
 				</ul>

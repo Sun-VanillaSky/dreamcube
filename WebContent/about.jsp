@@ -30,54 +30,40 @@
 
 		<!-- header -->
 		<%@ include file="/index_header.jsp"  %>
-		<div class="container">
-			<div class="row">
-			
+		
+		<!--  正文区 -->
+		<div class="container" style="margin-top: 40px">
+			<div class=" row">
+		
+		
 				<div class="col-sm-12 col-md-4 col-lg-4">
-					<div>关于我们</div>
-					<div>公司资质</div>
-					<div>公司简介</div>
+		
+					<ul class="nav nav-pills nav-stacked">
+						<li role="presentation" class="active">
+							<a href="#">关于我们</a>
+						</li>
+						<li role="presentation">
+							<a href="#">公司资质</a>
+						</li>
+						<li role="presentation">
+							<a href="#">公司简介</a>
+						</li>
+					</ul>
 				</div>
-			
-				<div class="col-sm-12 col-md-8 col-lg-8" style="background-color:red" >
-					公司简介《ssss》<br>
+		
+				<div class="col-sm-12 col-md-8 col-lg-8" style="background-color:red;min-height: 1800px">
+		
+					fwefewfwe
+					<br> we
+					<br> fw
+					<br> export default class wef
+					<br> wefwe extends baseclassNa
+					<br>
+					<br>
+		
 				</div>
 			</div>
-		
 		</div>
-			<!-- <div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-4 col-lg-4">
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
-					<div class="col-sm-12 col-md-6  col-lg-6 col-lg-offset-1">
-						<div class="row about">
-							<div class="col-sm-6 col-md-4">
-
-							</div>
-							<div class="col-sm-6  col-md-4">
-
-							</div>
-
-						</div>
-
-					</div>
-				</div>
-			</div> -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 			<!-- footer -->

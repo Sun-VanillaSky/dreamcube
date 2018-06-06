@@ -12,8 +12,8 @@ import com.dreamcube.commons.util.http.HttpUtils;
 
 
 
-@WebServlet("/index" )  
-public class IndexController  extends HttpServlet {
+@WebServlet("/news" )  
+public class NewsController  extends HttpServlet {
 
 	private static final long serialVersionUID = 7330800718341016554L;
 
