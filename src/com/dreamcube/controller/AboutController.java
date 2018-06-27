@@ -11,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import com.dreamcube.commons.util.http.HttpUtils;
 
 
-
 @WebServlet("/about" )  
 public class AboutController  extends HttpServlet {
 
