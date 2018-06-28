@@ -1,0 +1,34 @@
+-- 创建用户
+CREATE USER 'tqhuang'@'localhost' IDENTIFIED BY 'tqhuang';
+
+GRANT USAGE ON *.* TO 'tqhuang'@'localhost';
+
+FLUSH PRIVILEGES;
+
+--
+
+CREATE DATABASE `dremcube` /*!40100 COLLATE 'utf8_general_ci' */;
+
+
+-- 
+
+GRANT SELECT, EXECUTE, SHOW VIEW, ALTER, ALTER ROUTINE, CREATE, CREATE ROUTINE, CREATE TEMPORARY TABLES, CREATE VIEW, DELETE, DROP, EVENT, INDEX, INSERT, REFERENCES, TRIGGER, UPDATE, LOCK TABLES  
+ON `dremcube`.* 
+TO 'tqhuang'@'localhost' WITH GRANT OPTION;
+FLUSH PRIVILEGES;
+
+
+
+
+-- 
+
+CREATE TABLE `user` (
+	`ID` VARCHAR(50) NOT NULL,
+	`name` VARCHAR(50) NOT NULL,
+	`password` VARCHAR(50) NOT NULL,
+	PRIMARY KEY (`ID`)
+)
+COMMENT='用户表'
+COLLATE='utf8_general_ci'
+ENGINE=InnoDB
+;
