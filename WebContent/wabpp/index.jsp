@@ -68,32 +68,35 @@
         </div>
       </div>
 
-      <!-- Your main view, should have "view-main" class -->
+      <!-- 主视图 -->
       <div class="view view-main ios-edges">
         <!-- Page, data-name contains page name which can be used in callbacks -->
         <div class="page" data-name="home">
-          <!-- Top Navbar -->
-          <div class="navbar">
+          <!-- 上部导航 -->
+          <div class="navbar ">
             <div class="navbar-inner  d-flex">
-              <div class="left  d-flex">
+              <div class="">
                 <a href="#" class="link icon-only panel-open" data-panel="left">
-                  <svg height="24" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path></svg> 
+                  <svg height="24" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path>
+                  </svg>
                 </a>
               </div>
-              <div class="title sliding d-flex " >首页</div>
-              <div class="right  d-flex">
+              <div style="flex: auto"></div>
+              <!--伸缩盒子-->
+              <div>首页</div>
+              <div style="flex: auto"></div>
+              <!--伸缩盒子-->
+              <div>
                 <a href="#" class="link icon-only panel-open" data-panel="right">
-                  <svg height="24"  viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true"><path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path></svg>                </a>
+                  <svg height="24" viewBox="0 0 12 16" version="1.1" width="18" aria-hidden="true">
+                    <path fill-rule="evenodd" d="M11.41 9H.59C0 9 0 8.59 0 8c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zm0-4H.59C0 5 0 4.59 0 4c0-.59 0-1 .59-1H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1h.01zM.59 11H11.4c.59 0 .59.41.59 1 0 .59 0 1-.59 1H.59C0 13 0 12.59 0 12c0-.59 0-1 .59-1z"></path>
+                  </svg>
+                </a>
               </div>
             </div>
-          </div>
-          <!-- Toolbar-->
-          <!-- <div class="toolbar">
-          <div class="toolbar-inner">
-            <a href="#" class="link">Left Link</a>
-            <a href="#" class="link">Right Link</a>
-          </div>
-        </div> -->
+          </div><!--.navbar-->
+
           <!-- Scrollable page content-->
           <div class="page-content">
             <div class="block block-strong">

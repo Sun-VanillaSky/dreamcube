@@ -1,0 +1,24 @@
+
+* {
+	/* 宽度的计算方式  */
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 14px;
+    line-height: 1.5;
+    color: #24292e;
+    background-color: #fff;
+
+    
+    /*纵向伸缩*/
+    display: flex;
+    flex-direction: column;
+    min-height: 1vh;
+    margin: 0px;
+}
+a {
+    color: #0366d6;
+    text-decoration: none;
+}
+

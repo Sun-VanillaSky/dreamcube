@@ -7,7 +7,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>关于我们</title>
 
-		<!-- 默认样式-->
+		<!-- 基础样式-->
 		<link rel="stylesheet" href="${pageContext.request.contextPath }/commons/css/default.css">
 		<!-- Bootstrap 核心 CSS 文件 -->
 		<link rel="stylesheet" href="${pageContext.request.contextPath }/commons/bootstrap/3.3.7/css/bootstrap.min.css">
