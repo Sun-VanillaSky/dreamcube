@@ -17,15 +17,15 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="msapplication-tap-highlight" content="no">
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/wabpp/css/framework7.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/wabpp/css/icons.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/wabpp/css/app.css">
-
     <!-- Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="${pageContext.request.contextPath }/commons/bootstrap/3.3.7/css/bootstrap.min.css">
     <script type="text/javascript" src="${pageContext.request.contextPath }/commons/js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="${pageContext.request.contextPath }/commons/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/wabpp/css/framework7.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/wabpp/css/icons.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/wabpp/css/app.css">
 
 
   </head>
@@ -35,38 +35,11 @@
       <!-- Status bar overlay for fullscreen mode-->
       <div class="statusbar"></div>
       <!-- Left panel with cover effect-->
-      <div class="panel panel-left panel-cover theme-dark">
-        <div class="view">
-          <div class="page">
-            <div class="page-content">
-              <div class="block">
-                左侧的菜单
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%@include file="./_left_panel.jsp"  %>
+  
       <!-- 右侧菜单-->
-      <div class="panel panel-right panel-reveal theme-dark">
-        <div class="view">
-          <div class="page">
-            <div class="">
-              菜单
-            </div>
-            <div class="page-content">
-              <div class="block">
-
-                <!-- 右侧的列表 -->
-
-
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+     <%@include file="./_right_panel.jsp"  %>
+      
 
       <!-- 主视图 -->
       <div class="view view-main ios-edges">

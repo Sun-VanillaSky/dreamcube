@@ -8,32 +8,29 @@
 		<title>首页</title>
 
 		<!-- 默认样式-->
-		<link rel="stylesheet" href="${pageContext.request.contextPath }/commons/css/default.css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath }/commons/css/base.css">
 		<!-- Bootstrap 核心 CSS 文件 -->
 		<link rel="stylesheet" href="${pageContext.request.contextPath }/commons/bootstrap/3.3.7/css/bootstrap.min.css">
 		<script type="text/javascript" src="${pageContext.request.contextPath }/commons/js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="${pageContext.request.contextPath }/commons/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-
-		<!-- 默认样式-->
-		<link rel="stylesheet" href="${pageContext.request.contextPath }/index.css">
 		<script type="text/javascript">
 
 
 
 		</script>
+	
 
 	</head>
 
 	<body>
 
 		<!-- header -->
-		<%@include file="/index_header.jsp"  %>
+		<%@include file="/_header.jsp"  %>
 
 
 			<!-- section -->
-			<%@include file="/index_section.jsp"  %>
+			<%@include file="/_section.jsp"  %>
 
 				<!-- 正文 开始 -->
 				峨峨峨 取向香甜个
@@ -41,7 +38,7 @@
 
 
 				<!-- footer -->
-				<%@include file="/index_footer.jsp"  %>
+				<%@include file="/_footer.jsp"  %>
 	</body>
 
 	<script>

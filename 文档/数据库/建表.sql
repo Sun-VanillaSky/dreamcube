@@ -1,4 +1,4 @@
--- ´´½¨ÓÃ»§
+-- åˆ›å»ºç”¨æˆ·
 CREATE USER 'tqhuang'@'localhost' IDENTIFIED BY 'tqhuang';
 
 GRANT USAGE ON *.* TO 'tqhuang'@'localhost';
@@ -28,7 +28,7 @@ CREATE TABLE `user` (
 	`password` VARCHAR(50) NOT NULL,
 	PRIMARY KEY (`ID`)
 )
-COMMENT='ÓÃ»§±í'
+COMMENT='ç”¨æˆ·è¡¨'
 COLLATE='utf8_general_ci'
 ENGINE=InnoDB
 ;

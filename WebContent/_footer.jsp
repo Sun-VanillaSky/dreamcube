@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 
 	
-<link rel="stylesheet" href="${pageContext.request.contextPath }/index_footer.css">
+<link rel="stylesheet" href="${pageContext.request.contextPath }/_footer.css">
 
 <footer class="footer ">
 	<div class="container">

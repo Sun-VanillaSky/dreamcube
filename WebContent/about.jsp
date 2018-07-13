@@ -29,7 +29,7 @@
 	<body>
 
 		<!-- header -->
-		<%@ include file="/index_header.jsp"  %>
+		<%@ include file="/_header.jsp"  %>
 		
 		<!--  正文区 -->
 		<div class="container" style="margin-top: 40px">
@@ -67,7 +67,7 @@
 
 
 			<!-- footer -->
-			<%@ include file="/index_footer.jsp"  %>
+			<%@ include file="/_footer.jsp"  %>
 	</body>
 
 	<script>

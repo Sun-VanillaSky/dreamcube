@@ -8,6 +8,7 @@
 
 /*重新定义 bootstrap 样式*/
 .navbar {
+	border-radius: unset;
     margin-bottom: 0px;
 }
 /*重新定义 bootstrap 样式*/

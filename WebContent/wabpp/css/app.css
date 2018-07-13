@@ -3,7 +3,7 @@
 
 
 
-/* 图标基础色 */
+/* SVG图标基础色 */
 svg { fill: rgb(255, 255, 255); }
 
 
@@ -31,3 +31,16 @@ svg { fill: rgb(255, 255, 255); }
     background-position-y:center;
 }
 
+/*顶栏*/
+.navbar {
+	border-radius: unset !important;
+	height: 37px !important;/*顶栏高度*/
+	min-height: unset !important;
+}
+
+/*面板*/
+.panel {
+
+    border-radius: unset !important;
+
+}
