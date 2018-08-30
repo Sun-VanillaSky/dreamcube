@@ -37,6 +37,15 @@
 
 	<body>
 
+		<!-- 顶上的横幅-->
+	
+		<div class="page-header">
+			<h1>梦想立方
+				<small>用一场行走，开启孩子们路上的“梦想立方”</small>
+			</h1>
+		</div>
+
+
 		<!-- header -->
 		<%@include file="/_header.jsp"  %>
 
@@ -104,11 +113,10 @@
 				<div class="swiper-button-prev"></div>
 				<div class="swiper-button-next"></div>
 				<!-- 如果需要滚动条 -->
-				<div class="swiper-scrollbar"></div>
+<!-- 				<div class="swiper-scrollbar"></div> -->
 			</div>
 
 			<!-- 正文 开始 -->
-			峨峨峨 取向香甜个
 			<!-- 正文 结束 -->
 
 
@@ -116,7 +124,7 @@
 
 
 	<!-- footer -->
-				<%@include file="/_footer.jsp"  %>
+	<%@include file="/_footer.jsp"  %>
 	</body>
 
 	<script>

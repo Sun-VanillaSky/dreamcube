@@ -36,8 +36,8 @@
 /*重新定义 bootstrap 样式*/
 .navbar-inverse {
     /* 导航栏颜色 */
-    background-color: rgb(43, 55, 221);
-    border-color: rgb(43, 55, 221);
+    background-color: #292c33;
+    border-color: #292c33;
 }
 .navbar-inverse .navbar-collapse {
     border-color: rgb(255, 255, 255);

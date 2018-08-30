@@ -5,14 +5,61 @@
 <link rel="stylesheet" href="${pageContext.request.contextPath }/_footer.css">
 
 <footer class="footer ">
+
+	<div class="foot_strip">
+	
+	</div>
 	<div class="container">
+		
+		
 		<div class="row footer-top">
 			<div class="col-sm-12 col-md-4 col-lg-4">
-				<h4>
-					<img src="//">
-				</h4>
+				<div class="row">
+					
+					
+					<div class="col-xs-6 col-md-3">
+						<a href="#" class="thumbnail"> 
+						<img src="${pageContext.request.contextPath }/favicon.png">
+						</a>
+					</div>
+				
+					<div class="col-xs-6 col-md-3">
+						<a href="#" class="thumbnail"> 
+						<img src="${pageContext.request.contextPath }/favicon.png">
+						</a>
+					</div>
+				
+					<div class="col-xs-6 col-md-3">
+						<a href="#" class="thumbnail"> 
+						<img src="${pageContext.request.contextPath }/favicon.png">
+						</a>
+					</div>
+				
+					<div class="col-xs-6 col-md-3">
+						<a href="#" class="thumbnail"> 
+						<img src="${pageContext.request.contextPath }/favicon.png">
+						</a>
+					</div>
+				
+					<div class="col-xs-6 col-md-3">
+						<a href="#" class="thumbnail"> 
+						<img src="${pageContext.request.contextPath }/favicon.png">
+						</a>
+					</div>
+				
+					<div class="col-xs-6 col-md-3">
+						<a href="#" class="thumbnail"> 
+						<img src="${pageContext.request.contextPath }/favicon.png">
+						</a>
+					</div>
+				
+				
+				
+				</div>
 				<p>我们一直致力于为广大开发者提供更多的优质技术文档和辅助开发工具！</p>
 			</div>
+			
+			<!-- 右 -->
 			<div class="col-sm-12 col-md-6  col-lg-6 col-lg-offset-1">
 				<div class="row about">
 					<div class="col-sm-6 col-md-4">
@@ -49,7 +96,9 @@
 
 			</div>
 		</div>
-		<hr>
+		
+		
+		
 		<!-- 备案信息 -->
 		<div class="row footer-bottom">
 			<ul class="list-inline text-center">
@@ -59,5 +108,8 @@
 				<li>京公网安备XXXXXXXXXXXXXXXXXXX</li>
 			</ul>
 		</div>
+		
+		
+		
 	</div>
 </footer>

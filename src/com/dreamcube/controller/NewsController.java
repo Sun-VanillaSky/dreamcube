@@ -22,7 +22,7 @@ public class NewsController  extends HttpServlet {
 		// 基础设置
 		HttpUtils.defaultServletSetting(req, resp);
 		
-		 req.getRequestDispatcher("/index.jsp").forward(req,resp);
+		 req.getRequestDispatcher("/news.jsp").forward(req,resp);
 	}
 	
 	
