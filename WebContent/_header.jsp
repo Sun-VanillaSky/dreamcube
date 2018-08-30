@@ -3,13 +3,7 @@
 
 	<link rel="stylesheet" href="${pageContext.request.contextPath }/_header.css" />
 
-	<!-- 顶上的横幅-->
 
-	<div class="page-header">
-		<h1>梦想立方
-			<small>用一场行走，开启孩子们路上的“梦想立方”</small>
-		</h1>
-	</div>
 
 	<header class="navbar navbar-inverse">
 		<div class="container">
@@ -30,10 +24,10 @@
 						<a id="tab_about" href="${pageContext.request.contextPath }/about" target=“”>关于我们</a>
 					</li>
 					<li>
-						<a href="${pageContext.request.contextPath }/product" target=“”>研学产品</a>
+						<a id="tab_product" href="${pageContext.request.contextPath }/product" target=“”>研学产品</a>
 					</li>
 					<li>
-						<a href="${pageContext.request.contextPath }/news" target=“”>最新动态</a>
+						<a id="tab_news" href="${pageContext.request.contextPath }/news" target=“”>最新动态</a>
 					</li>
 					<li>
 						<a id="tab_contact" href="${pageContext.request.contextPath }/contact" target=“”>联系我们</a>

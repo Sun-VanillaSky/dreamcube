@@ -12,6 +12,13 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.Test;
 
+/**
+ * @author 孙寿彬
+ * 
+ * 链接数据库的工具类
+ * 
+ *
+ */
 public class DBCPDataSource {
 
     private static BasicDataSource dataSource = null;
@@ -26,6 +33,12 @@ public class DBCPDataSource {
     // logger.error("错误");
     // logger.fatal("严重错误");
     // }
+    /**
+     * 
+     * 获取以一个数据源
+     * 
+     * @return 数据源
+     */
     public static BasicDataSource getDBCPDataSource() {
         if (DBCPDataSource.dataSource != null) {
             return DBCPDataSource.dataSource;
@@ -74,10 +87,14 @@ public class DBCPDataSource {
 
                 Statement sm = connection.createStatement();
                 // mysql 表名linux下默认区分大小写
-                ResultSet rs = sm.executeQuery("SELECT * FROM `TEST` ");
+                ResultSet rs = sm.executeQuery("SELECT * FROM `USER` ");
                 while (rs.next()) {
-                    long id = rs.getLong(1);
+                    String id = rs.getString("ID");
+                    String name = rs.getString("NAME");
+                    String password = rs.getString("PASSWORD");
                     System.out.println("" + i + "从数据库中得到一条记录的值" + id);
+                    System.out.println("" + i + "从数据库中得到一条记录的值" + name);
+                    System.out.println("" + i + "从数据库中得到一条记录的值" + password);
                 }
                 rs.close();
                 sm.close();
