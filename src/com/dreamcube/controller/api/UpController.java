@@ -9,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -21,11 +20,10 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.dreamcube.commons.database.DBCPDataSource;
 import com.dreamcube.commons.util.http.HttpUtils;
 import com.dreamcube.dao.ImageDao;
 
-@WebServlet("/api/up")
+@WebServlet("/api/testup")
 public class UpController extends HttpServlet {
 	private static final long serialVersionUID = 5950359738441936461L;
 	private static final Logger logger = LogManager.getLogger(UpController.class); // log
@@ -42,7 +40,7 @@ public class UpController extends HttpServlet {
 		// 声明disk --临时文件存储
 		DiskFileItemFactory disk = new DiskFileItemFactory();
 		disk.setSizeThreshold(1024 * 1024);
-		disk.setRepository(new File("d:/Temp"));
+		disk.setRepository(new File("/tmp"));
 		// 声明解析requst的servlet
 		ServletFileUpload up = new ServletFileUpload(disk);
 		try {
@@ -54,12 +52,7 @@ public class UpController extends HttpServlet {
 			for (FileItem file : list) {
 				Map<String, String> mm = new HashMap<String, String>();
 
-				//////////////////////////
-				String imageID = new ImageDao().insertImage(file);
-				logger.debug("插入了[" + imageID + "]条");
-				response.sendRedirect(request.getContextPath()+ "/api/image?id="+imageID);
 
-				//////////////////////////
 
 				// 获取文件名 及其他信息
 				String fileName = file.getName();
@@ -70,16 +63,27 @@ public class UpController extends HttpServlet {
 				if (size <= 0) {
 					continue;
 				}
+				
+				
+				//////////////////////////
+				String imageID = new ImageDao().insertImage(file);
+				logger.debug("图片id[" + imageID + "]");
+				response.sendRedirect(request.getContextPath()+ "/api/image?id="+imageID);
+
+				return;
+				//////////////////////////
+				
+				
 				// 使用工具类
 				// FileUtils.copyInputStreamToFile(in,new File(path+"/"+fileName));
-				mm.put("fileName", fileName);
-				mm.put("fileType", fileType);
-				mm.put("size", "" + size);
+				//mm.put("fileName", fileName);
+				//mm.put("fileType", fileType);
+				//mm.put("size", "" + size);
 
-				ups.add(mm);
-				file.delete(); //删除临时文件
+				//ups.add(mm);
+				//file.delete(); //删除临时文件
 			}
-			request.setAttribute("ups", ups);
+			//request.setAttribute("ups", ups);
 			// 转发
 			//response.sendRedirect(request.getContextPath()+ "/api/image?id=5acd8595-b575-48ef-87d5-081277048716");
 			//request.getRequestDispatcher("/api/image?id=5acd8595-b575-48ef-87d5-081277048716").forward(request, response);

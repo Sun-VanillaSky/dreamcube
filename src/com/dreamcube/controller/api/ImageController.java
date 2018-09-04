@@ -17,19 +17,16 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.fileupload.FileItem;
-import org.apache.commons.fileupload.disk.DiskFileItemFactory;
-import org.apache.commons.fileupload.servlet.ServletFileUpload;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import com.dreamcube.commons.database.DBCPDataSource;
 import com.dreamcube.commons.util.http.HttpUtils;
 import com.dreamcube.dao.ImageDao;
 
 /**
- * @author 孙寿彬
+ * 
  * 根据图片id显示图片
+ * @author 孙寿彬
  * 
  * /api/image?id=124232546576869797
  */

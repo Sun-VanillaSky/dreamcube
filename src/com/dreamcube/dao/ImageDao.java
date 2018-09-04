@@ -25,7 +25,10 @@ public class ImageDao {
 		try {
 	        connection = DBCPDataSource.getDBCPDataSource().getConnection();
 
-	        ps = connection.prepareStatement("insert into IMAGE values(?,?)");
+	        // test
+	        //DBCPDataSource.test();
+	        
+	        ps = connection.prepareStatement("INSERT INTO IMAGE VALUES(?,?)");
 	        ps.setString(1, uuid);
 	        InputStream in = file.getInputStream();
 	        ps.setBinaryStream(2, in, in.available()); 
@@ -38,10 +41,19 @@ public class ImageDao {
 	        	return null;
 	        }
 		}catch (Exception e) {
+			e.printStackTrace();
         	return null;
 		}finally {
-			ps.close();
-			connection.close(); // 归还连接 --必须
+			try {
+				ps.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}			
+			try {
+				connection.close(); // 归还连接 --必须
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
 		}
 
         
@@ -54,13 +66,13 @@ public class ImageDao {
 		InputStream binaryStream = null;
         Connection connection = DBCPDataSource.getDBCPDataSource().getConnection();
 
-        PreparedStatement ps = connection.prepareStatement("select * from  IMAGE where id = ?");
+        PreparedStatement ps = connection.prepareStatement("SELECT * FROM  IMAGE WHERE ID = ?");
         
         ps.setString(1, id);
 
         ResultSet rs = ps.executeQuery();
         if(rs.next()) {
-        	binaryStream = rs.getBinaryStream("image");
+        	binaryStream = rs.getBinaryStream("IMAGE");
         }
 
         rs.close();
