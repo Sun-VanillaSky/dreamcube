@@ -23,9 +23,9 @@
     <script type="text/javascript" src="${pageContext.request.contextPath }/commons/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/wabpp/css/framework7.min.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/wabpp/css/icons.css">
-    <link rel="stylesheet" href="${pageContext.request.contextPath }/wabpp/css/app.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/webapp/css/framework7.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/webapp/css/icons.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath }/webapp/css/app.css">
 
 
   </head>
@@ -208,13 +208,13 @@
   -->
 
     <!-- Framework7 library -->
-    <script src="${pageContext.request.contextPath }/wabpp/js/framework7.min.js"></script>
+    <script src="${pageContext.request.contextPath }/webapp/js/framework7.min.js"></script>
 
     <!-- App routes -->
-    <script src="${pageContext.request.contextPath }/wabpp/js/routes.js"></script>
+    <script src="${pageContext.request.contextPath }/webapp/js/routes.js"></script>
 
     <!-- Your custom app scripts -->
-    <script src="${pageContext.request.contextPath }/wabpp/js/app.js"></script>
+    <script src="${pageContext.request.contextPath }/webapp/js/app.js"></script>
   </body>
 
   </html>
