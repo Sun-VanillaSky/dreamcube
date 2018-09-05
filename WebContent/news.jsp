@@ -9,7 +9,7 @@
 		<link rel="shortcut icon" href="/favicon.png" />
 		<link rel="bookmark"href="/favicon.png" />
 		
-		<title>首页</title>
+		<title>最新动态</title>
 
 		<!-- 默认样式-->
 		<link rel="stylesheet" href="${pageContext.request.contextPath }/commons/css/base.css">

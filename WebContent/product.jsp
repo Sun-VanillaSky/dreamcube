@@ -9,7 +9,7 @@
 <link rel="shortcut icon" href="/favicon.png" />
 <link rel="bookmark" href="/favicon.png" />
 
-<title>首页</title>
+<title>研学产品</title>
 
 <!-- 默认样式-->
 <link rel="stylesheet"
