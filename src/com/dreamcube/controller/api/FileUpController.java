@@ -48,7 +48,7 @@ public class FileUpController extends HttpServlet {
 
 		// 声明disk --临时文件存储
 		DiskFileItemFactory disk = new DiskFileItemFactory();
-		disk.setSizeThreshold(1024 * 1024);
+		disk.setSizeThreshold(100 * 1024 * 1024);
 		disk.setRepository(new File("/tmp"));
 		// 声明解析requst的servlet
 		ServletFileUpload up = new ServletFileUpload(disk);

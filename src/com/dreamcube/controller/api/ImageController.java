@@ -69,7 +69,6 @@ public class ImageController extends HttpServlet {
 			
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally{
             // 输入完毕，清楚缓冲
